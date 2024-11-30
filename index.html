@@ -1,0 +1,61 @@
+<html lang="pt-BR">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Michael e Nicolly</title>
+</head>
+
+<body>
+    <header>Michael e Nicolly</header>
+
+    <section class="chamada">
+        <div class="chamada-texto">
+
+            <h1>vá ate o final da pagina amor</h1>
+
+        </div>
+        <div class="gallery">
+            <img src="1.jpg" alt="Foto 1">
+            <img src="2.jpg" alt="Foto 2">
+            <img src="3.jpg" alt="Foto 3">
+            <img src="4.jpg" alt="Foto 4">
+            <img src="5.jpg" alt="Foto 5">
+            <img src="6.jpg" alt="Foto 6">
+            <img src="7.jpg" alt="Foto 7">
+            <img src="8.jpg" alt="Foto 8">
+          </div>
+          <div id="timer"></div>
+
+          <script>
+            function updateTimer() {
+              const startDate = new Date('2024-09-29T00:00:00');
+              const now = new Date();
+              const elapsedTime = now - startDate;
+        
+              const days = Math.floor(elapsedTime / (1000 * 60 * 60 * 24));
+              const hours = Math.floor((elapsedTime / (1000 * 60 * 60)) % 24);
+              const minutes = Math.floor((elapsedTime / (1000 * 60)) % 60);
+              const seconds = Math.floor((elapsedTime / 1000) % 60);
+        
+              document.getElementById('timer').innerHTML = `
+                <span>${days} dias</span>,
+                <span>${hours} horas</span>,
+                <span>${minutes} minutos</span>,
+                <span>${seconds} segundos</span>
+              `;
+            }
+            setInterval(updateTimer, 1000);
+          </script>
+           <section class="chamada">
+            <div class="chamada-texto">
+    
+                <h1>feliz dois meses juntos amor, eu te amo muito estar com voce é a melhor coisa do mundo, voce é meu porto seguro com quem eu posso contar para tudo nesse mundo, voce é a mulher que vou me casar daqui alguns meses, eu te amo muito voce me deixa feliz todos os dias, nao vejo a grande hora da gente casar e ter nossas coisinhas, voce é uma mulher incrivel amor, uma das coisas q mais amo em voce é seu lindo sorriso e seus olhos lindos e perfeitos, amo olhar eles, cada foto colocada aqui foi um momento muito divertio e legal, tem muitos mais fotos de dias assim so nao coloquei porque iria encher de foto kkkkk, mais quero continuar tendo esses dias legais e diverdidos ao seu lado minha princesa, eu te amo muito feliz dois meses juntos.</h1>
+                <p>feito com amor e carinho no dia 29/11 e finalizado dia 30/11 pelo seu principe.</p>
+    
+            </div>
+ </section>
+</body>
